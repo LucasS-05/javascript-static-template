@@ -1,7 +1,7 @@
-# javascript-base-template
+# javascript-static-template
 
-**This is a template that uses webpack + eta (templating engine) + express.js to offer the highest level of modularity 
-for building a website without using any third-party javascript frameworks such as React, Vue, Angular etc..**
+This is a template that uses webpack + eta (templating engine) to offer the highest level of modularity 
+for building a **static website** without using any third-party javascript frameworks such as React, Vue, Angular etc..
 
 The only reason I developed this template is because I wanted to have a blueprint which I can use to develop websites that are built on my way of thinking and not have to rely on frameworks that use different ways of approaching the development process. 
 
