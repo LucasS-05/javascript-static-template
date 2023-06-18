@@ -7,7 +7,7 @@ for building a website without using any third-party javascript frameworks such 
 ## Features
 - uses the lightweight and blazing fast embedded JS templating engine - [eta](https://github.com/joemccann/dillinger)
 - uses webpack to minimize the app size and to improve app performance / load times  - [webpack](https://github.com/joemccann/dillinger)
-- uses the new html-bundler-webpack-plugin to simplify the plugin structure (as it covers multiple essential plugins in one)
+- uses the new [html-bundler-webpack-plugin](https://github.com/webdiscus/html-bundler-webpack-plugin) to simplify the plugin structure (as it covers multiple essential plugins in one)
 and to enable the possibility to work with templating engines. 
 
 
