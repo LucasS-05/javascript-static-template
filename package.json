@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -16,8 +17,10 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "css-loader": "^6.8.1",
     "eta": "^3.0.1",
     "express": "^4.18.2",
-    "html-bundler-webpack-plugin": "^1.18.0"
+    "html-bundler-webpack-plugin": "^1.18.0",
+    "sass-loader": "^13.3.2"
   }
 }

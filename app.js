@@ -1,20 +1,14 @@
-// Importing libraries
-const express = require('express');
-const { Eta } = require("eta")
 const path = require('path');
 
-const app = express();
+const express = require('express');
 
-const eta = new Eta({ views: path.join(__dirname, "src") });
+const app = new express();
+app.use(express.static('/dist'));
 
-// Sending static files with Express 
-app.use(express.static('public'));
-
-// Configure Routes
-app.use('/', (req, res) => {
-  res.render('home')
+app.get('/', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'dist/index.html'));
 });
 
 app.listen(3000, () => {
-  console.log('Server is starting at port', 3000);
-});
+  console.log('App listening on port 3000')
+})
