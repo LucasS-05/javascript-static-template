@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "title": "app"
+  },
+  "navbar": {
+    "headline": "navbar headline"
+  },
+  "main-page": {
+    "main-text": "main text"
+  }
+}

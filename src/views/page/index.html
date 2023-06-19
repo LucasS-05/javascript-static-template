@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title><%= headline %></title>
+    <title><%= meta.title %></title>
+    <% console.log(it) %>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="@styles/main.scss" rel="stylesheet">
   </head>
   <body>
-    <%~ includeFile('../partials/navbar.html') %>
+    <%~ includeFile('../partials/navbar.html', it)  %>
   </body>
 </html>

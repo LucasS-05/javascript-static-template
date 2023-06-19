@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlBundlerPlugin = require('html-bundler-webpack-plugin');
+const data = require("./data.json")
 
 module.exports = (env, argv) => {
   const isDev = argv.mode === 'development';
@@ -11,6 +12,7 @@ module.exports = (env, argv) => {
 
     output: {
       path: path.join(__dirname, 'dist'),
+      clean: true
     },
 
     resolve: {
@@ -20,7 +22,7 @@ module.exports = (env, argv) => {
         '@images': path.join(__dirname, 'src/assets/images/'),
         '@fonts': path.join(__dirname, 'src/assets/fonts/'),
         '@styles': path.join(__dirname, 'src/assets/styles/'),
-        '@scripts': path.join(__dirname, 'src/assets/scripts/'),
+        '@js': path.join(__dirname, 'src/assets/js/'),
       },
     },
 
@@ -31,9 +33,7 @@ module.exports = (env, argv) => {
           // define HTML templates here
           index: {
             import: 'src/views/page/index.html',
-            data: {
-              headline: "abc"
-            }
+            data: { ...data }
           }, // => dist/index.html
         },
 
