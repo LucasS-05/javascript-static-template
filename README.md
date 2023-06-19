@@ -1,19 +1,24 @@
-# javascript-base-template
+# javascript-static-template
 
-This is a template that uses webpack + eta (templating engine) + express.js to offer the highest level of modularity 
-for building a website without using any third-party javascript frameworks such as React, Vue, Angular etc.
+This is a template that uses webpack + eta (templating engine) to offer the highest level of modularity 
+for building a **static website** without using any third-party javascript frameworks such as React, Vue, Angular etc..
 
+The only reason I developed this template is because I wanted to have a blueprint which I can use to develop websites that are built on my way of thinking and not have to rely on frameworks that use different ways of approaching the development process. 
+
+You can use this template to code a web app which you can understand, without getting tangled in the hassles of each framework.
+> :warning:  **Highly recommended to have some advanced knowledge in building web apps** - otherwise, you could use simple html/css/javascript folder structures or just use a framework.
 
 ## Features
-- uses the lightweight and blazing fast embedded JS templating engine - [eta](https://github.com/joemccann/dillinger)
-- uses webpack to minimize the app size and to improve app performance / load times  - [webpack](https://github.com/joemccann/dillinger)
-- uses the new [html-bundler-webpack-plugin](https://github.com/webdiscus/html-bundler-webpack-plugin) to simplify the plugin structure (as it covers multiple essential plugins in one)
-and to enable the possibility to work with templating engines. 
+- no frameworks!! you can build your website from scratch.
+- lightweight and blazing fast embedded JS templating engine - [eta]( https://github.com/joemccann/dillinger) // however customizable ( [ejs](https://github.com/mde/ejs), [handlebars](https://github.com/handlebars-lang/handlebars.js/), [nunchucks](https://github.com/mozilla/nunjucks) || [see more](https://github.com/webdiscus/html-bundler-webpack-plugin#recipe-template-engine) )
+- uses [webpack](https://github.com/joemccann/dillinger) to minimize the app size and to improve app performance / load times
+- uses the new [html-bundler-webpack-plugin](https://github.com/webdiscus/html-bundler-webpack-plugin) to simplify the plugin structure
+(as it covers multiple essential plugins in one) and to offer a high level of bundler customizability
 
 
 ## Why [eta](https://github.com/joemccann/dillinger)?
 
-Well, apart from the simplicity of the engine, i used it for the following reasons:
+Apart from the simplicity of the engine, I used it for the following reasons:
 - 0 dependencies 
 - Only ~3.5 KB minzipped
 - Configurable
@@ -21,6 +26,35 @@ Well, apart from the simplicity of the engine, i used it for the following reaso
 - Precompilation, partials, async
 - Layout support!!!!!
 - Very minimal
+
+cool huh?
+
+## Folder structure
+
+```bash
+.
+├── app.js
+├── dist
+│   ├── assets
+│   └── index.html 
+├── package.json
+├── package-lock.json
+├── README.md
+├── src
+│   ├── assets
+│   │   ├── fonts
+│   │   ├── images
+│   │   ├── js
+│   │   └── styles
+│   │       └── main.scss
+│   └── views
+│       ├── page
+│       │   └── index.html
+│       └── partials
+│           └── navbar.html
+│           └── footer.html
+└── webpack.config.js
+```
 
 ## Setup
 
@@ -33,10 +67,12 @@ install the dependencies
 ```
 npm install
 ```
-build the server
+build and run the server
 ```
 npm run build
+npm start
 ```
+
 
 
 
