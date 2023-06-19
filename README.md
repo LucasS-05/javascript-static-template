@@ -34,7 +34,7 @@ You can use this template to code a web app which you can understand, without ge
 - Reduced functionality
 
 ## Use cases
-**Due to the limitations of static websites, this template shines the best when the content doesn't change often and it doesn't rely on external data.**
+**Due to the limitations of static websites, this template shines the best when the pages don't require frequent updates or changes.**
 
 ### This template is best suited for: 
 - **Brochure Websites**: Static websites work well for businesses or individuals looking to showcase basic information, such as company profiles, contact details, and product/service descriptions.
@@ -72,34 +72,44 @@ cool huh?
 ```bash
 .
 ├── app.js
+├── data.json
 ├── dist
-│   ├── assets
-│   └── index.html 
+│   ├── assets
+│   │   └── css
+│   └── index.html
 ├── package.json
 ├── package-lock.json
 ├── README.md
 ├── src
-│   ├── assets
-│   │   ├── fonts
-│   │   ├── images
-│   │   ├── js
-│   │   └── styles
-│   │       └── main.scss
-│   └── views
-│       ├── page
-│       │   └── index.html
-│       └── partials
-│           └── navbar.html
-│           └── footer.html
+│   ├── assets
+│   │   ├── fonts
+│   │   ├── images
+│   │   ├── js
+│   │   └── styles
+│   │       ├── base
+│   │       │   ├── __base-dir.scss
+│   │       │   ├── _global.scss
+│   │       │   └── _typography.scss
+│   │       ├── components
+│   │       ├── layout
+│   │       ├── utils
+│   │       └── main.scss
+│   └── views
+│       ├── page
+│       │   └── index.html
+│       └── partials
+│           └── navbar.html
 └── webpack.config.js
 ```
 
 - **dist folder** - the folder where webpack will bundle all the code 
 - **src** - this folder is split into
   - **assets** : this is where your fonts, images, javascript code and scss code will live
+    - **scss folder structure** : this scss folder structure is a custom 4-1 pattern architecture, inspired by [this article](https://matthewelsom.com/blog/simple-scss-playbook.html)
   - **views** : this is where you will write your html / templating engine code (the configured code is recognised by webpack as *eta*, although it has the .html extension (configurable in webpack.config.js))
      - split into **pages and partials** : partials are pieces of reusable code, similar to components in React (navbar, footer, etc..) 
-
+- **webpack.config.js** - webpack config
+- **data.json** - a json document to offer data modularity (component specific text pieces, navbar items, footer items etc..)
 ## Setup
 
 clone the repo
