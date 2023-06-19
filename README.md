@@ -47,15 +47,10 @@ You can use this template to code a web app which you can understand, without ge
 
 ### This template is not suited for : 
 - E-commerce
-
 - Social Networking
-
 - News and Media
-
 - User-generated Content such as forums, discussion boards, wikis, or review sites
-
 - Personalized Experiences
-
 - Real-time Data
 
 
@@ -102,7 +97,7 @@ cool huh?
 - **dist folder** - the folder where webpack will bundle all the code 
 - **src** - this folder is split into
   - **assets** : this is where your fonts, images, javascript code and scss code will live
-  - **views** : this is where you will write your html / templating engine code ( the configured code is recognised by webpack as *eta*, although it has the .html extension ( configurable in webpack.config.js ) 
+  - **views** : this is where you will write your html / templating engine code (the configured code is recognised by webpack as *eta*, although it has the .html extension (configurable in webpack.config.js))
      - split into **pages and partials** : partials are pieces of reusable code, similar to components in React (navbar, footer, etc..) 
 
 ## Setup
