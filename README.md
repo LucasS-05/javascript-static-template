@@ -15,6 +15,49 @@ You can use this template to code a web app which you can understand, without ge
 - uses the new [html-bundler-webpack-plugin](https://github.com/webdiscus/html-bundler-webpack-plugin) to simplify the plugin structure
 (as it covers multiple essential plugins in one) and to offer a high level of bundler customizability
 
+### Advantages 
+- **Simplicity and speed**
+- Cost-effective
+- Enhanced security
+- Reliable performance
+- Easy hosting options
+- Version control with Git
+- SEO-friendly structure
+- Improved performance on low-end devices
+- High availability through caching
+- No database management required
+
+### Limitations 
+- Limited interactivity
+- Dependency on web development skills
+- Inefficient content management
+- Reduced functionality
+
+## Use cases
+**Due to the limitations of static websites, this template shines the best when the content doesn't change often and it doesn't rely on external data.**
+
+### This template is best suited for: 
+- **Brochure Websites**: Static websites work well for businesses or individuals looking to showcase basic information, such as company profiles, contact details, and product/service descriptions.
+
+- **Personal Portfolios**: Artists, photographers, writers, or freelancers can create visually appealing static websites to display their work, portfolios, and achievements without the need for complex functionalities.
+
+- **Blogs and Documentation**: Static websites can efficiently serve as blogs or documentation platforms, where content is primarily text-based and doesn't require frequent updates or user interactions.
+
+- **Landing Pages**: Static websites are often used for landing pages or promotional campaigns, where the focus is on a specific call to action, capturing leads, or providing concise information.
+
+### This template is not suited for : 
+- E-commerce
+
+- Social Networking
+
+- News and Media
+
+- User-generated Content such as forums, discussion boards, wikis, or review sites
+
+- Personalized Experiences
+
+- Real-time Data
+
 
 ## Why [eta](https://github.com/joemccann/dillinger)?
 
@@ -56,13 +99,19 @@ cool huh?
 └── webpack.config.js
 ```
 
+- **dist folder** - the folder where webpack will bundle all the code 
+- **src** - this folder is split into
+  - **assets** : this is where your fonts, images, javascript code and scss code will live
+  - **views** : this is where you will write your html / templating engine code ( the configured code is recognised by webpack as *eta*, although it has the .html extension ( configurable in webpack.config.js ) 
+     - split into **pages and partials** : partials are pieces of reusable code, similar to components in React (navbar, footer, etc..) 
+
 ## Setup
 
 clone the repo
-```
-git clone https://github.com/LucasS-05/javascript-template/
-cd javascript-template
-```
+- Go to the base of the repo and click "Use this template"
+- Click on "Create a new repository"
+- Create the repository and then clone it to your local machine using git clone
+
 install the dependencies
 ```
 npm install
@@ -72,7 +121,5 @@ build and run the server
 npm run build
 npm start
 ```
-
-
 
 
