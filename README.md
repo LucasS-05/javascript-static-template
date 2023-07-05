@@ -54,7 +54,7 @@ You can use this template to code a web app which you can understand, without ge
 - Real-time Data
 
 
-## Why [eta](https://github.com/joemccann/dillinger)?
+## Why [eta](https://github.com/eta-dev/eta)?
 
 Apart from the simplicity of the engine, I used it for the following reasons:
 - 0 dependencies 
